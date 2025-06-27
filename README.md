@@ -33,46 +33,47 @@ cd client && npm install
 
 # Install backend dependencies
 cd ../server && npm install
-Environment Setup
-Create .env in /server:
+```
 
+### Environment Setup
+Create `.env` in `/server`:
+```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
-Run Locally
+```
 
+### Run Locally
+```bash
 # Start backend
 cd server && npm start
 
 # Start frontend
 cd ../client && npm start
-Visit: http://localhost:3000
+```
 
-📌 API Routes
-POST /api/auth/register – Register
+Visit: [http://localhost:3000](http://localhost:3000)
 
-POST /api/auth/login – Login
+## 📌 API Routes
 
-GET /api/projects – View all projects
+- `POST /api/auth/register` – Register  
+- `POST /api/auth/login` – Login  
+- `GET /api/projects` – View all projects  
+- `POST /api/projects` – Post a new project  
+- `POST /api/bids` – Place a bid  
+- `GET /api/bids/:projectId` – View bids
 
-POST /api/projects – Post a new project
+## 🧪 Testing Tools
+- Postman (API)
+- MongoDB Compass (DB)
+- Chrome DevTools (UI)
 
-POST /api/bids – Place a bid
+## 👨‍💻 Team
+- **Bolleddula Vivek Rahul Rai** – Backend, Architecture 
+- **Battu Baby Sarojini** – Frontend (UI)  
+- **Batraju Vamsikrishna** – API Integration, Deployment  
+- **Barama Haritha Sai** – Testing, Docs, Support  
 
-GET /api/bids/:projectId – View bids
+---
 
-🧪 Testing Tools
-Postman (API)
-
-MongoDB Compass (DB)
-
-Chrome DevTools (UI)
-
-👨‍💻 Team
-Bolleddula Vivek Rahul Rai – Backend, Architecture 
-
-Battu Baby Sarojini – Frontend (UI)
-
-Batraju Vamsikrishna – API Integration, Deployment
-
-Barama Haritha Sai – Testing, Docs, Support
+> ⚠️ Future Plans: Real-time chat, payment gateway, mobile app, review system
